@@ -1,0 +1,28 @@
+//https://naltatis.github.io/jade-syntax-docs
+
+- var name = "doyouni"
+- var student = { no : 1, name: "doyouni", point:90 }
+- var arr = ["봄", "여름", "가을", "겨울"]
+
+doctype html
+html
+    head
+        title jade (pug)
+    body
+        h1 hello Pug4
+        h2=name
+        h3 #{student.no}
+        h3 #{student.name}
+        ul
+            for season in arr
+                li= season
+        select#sel
+            each season, i in arr
+                option(value=i) Season #{season}
+        div.controls
+            label(for="id")
+            input(type="text", placeholder="아이디 입력")#id
+        if name == "doyouni"
+            p Nice to meet you 
+        else 
+            p Good~!
