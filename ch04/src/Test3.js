@@ -2,7 +2,7 @@ import React from 'react';
 import './Test3.scss';
 const Test3 = () => {
   return (
-    <div>
+    <div className='Test3'>
         <ul>
             <li className='box red'></li>
             <li className='box orange'></li>

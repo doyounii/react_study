@@ -1,16 +1,17 @@
 //yarn add react-bootstrap bootstrap
-import React from 'react'
-import Header from './Header';
-import Contents from './Contents';
-import Footer from './Footer';
-
+import React from 'react';
+import Header from './Header.js';
+import Contents from './Contents.js';
+import Footer from './Footer.js';
+import 'bootstrap/dist/css/bootstrap.min.css';    //bootstrap
+import './Common.scss';
 const Test4 = () => {
   return (
-    <div>
+    <>
         <Header />
         <Contents />
         <Footer />
-    </div>
+    </>
   )
 }
 

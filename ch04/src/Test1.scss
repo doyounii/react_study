@@ -1,31 +1,30 @@
-$normal : #333;
-$hover : deeppink;
-$active : deepskyblue;
+$normal: #333;
+$hover: deeppink;
+$active: deepskyblue; 
 .Menu {
     clear:both;
-    width: 600px;
+    width:600px;
     margin:20px auto;
     ul {
         list-style: none;
-        margin: 20px auto;
-        padding: 12pxl;
+        margin:20px auto;
+        padding:12x;
         li {
-            display: inline-block;
+            display:inline-block;
             margin:10px;
             a {
-                display: block;
+                display:block;
                 text-decoration: none;
-                padding: 6px 10px;
-                background-color: $normal;
-                color: #fff;
+                padding:6px 10px;
+                background-color:$normal;
+                color:#fff;
                 &:hover {
-                    background-color: $hover;
+                    background-color:$hover;
                 }
                 &:active {
-                    background-color: $active;
+                    background-color:$active;
                 }
             }
         }
     }
-
 }
